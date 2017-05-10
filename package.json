@@ -1,0 +1,17 @@
+{
+  "name": "smecky-dicebag",
+  "version": "1.0.0",
+  "description": "Another simple dice roller.",
+  "main": "index.js",
+  "author": "Lucas deToledo",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "data-driven": "^1.3.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0"
+  }
+}
