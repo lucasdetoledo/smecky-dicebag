@@ -1,6 +1,6 @@
 {
   "name": "smecky-dicebag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Another simple dice roller.",
   "main": "index.js",
   "author": "Lucas deToledo",

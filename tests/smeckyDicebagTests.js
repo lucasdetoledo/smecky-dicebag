@@ -235,4 +235,42 @@ describe('dicebag', function () {
       random_stub.restore()
     })
   })
+  describe('verbose', function () {
+    it('base contrived', function () {
+      // arrange
+      let random_stub
+      random_stub = Sinon.stub(_, 'random')
+      random_stub.onCall(0).returns(1)
+      random_stub.onCall(1).returns(2)
+      random_stub.onCall(2).returns(3)
+      random_stub.onCall(3).returns(4)
+      // adjust
+
+      // act
+      let result = ClassUnderTest.roll(4, 4, { verbose: true })
+      // assert
+      random_stub.callCount.should.equal(4)
+      result.sum.should.equal(10)
+      result.roll_log.should.deep.equal([1, 2, 3, 4])
+      random_stub.restore()
+    })
+    it('d4 contrived', function () {
+      // arrange
+      let random_stub
+      random_stub = Sinon.stub(_, 'random')
+      random_stub.onCall(0).returns(1)
+      random_stub.onCall(1).returns(2)
+      random_stub.onCall(2).returns(3)
+      random_stub.onCall(3).returns(4)
+      // adjust
+
+      // act
+      let result = ClassUnderTest.d4(4, { verbose: true })
+      // assert
+      random_stub.callCount.should.equal(4)
+      result.sum.should.equal(10)
+      result.roll_log.should.deep.equal([1, 2, 3, 4])
+      random_stub.restore()
+    })
+  })
 })
