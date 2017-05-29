@@ -1,10 +1,26 @@
 {
   "name": "smecky-dicebag",
   "version": "1.0.1",
+  "homepage": "https://github.com/lucasdetoledo/smecky-dicebag",
   "description": "Another simple dice roller.",
   "main": "index.js",
   "author": "Lucas deToledo",
   "license": "MIT",
+  "files": [
+    "lib",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "roll",
+    "dice",
+    "random"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasdetoledo/smecky-dicebag"
+  },
   "dependencies": {
     "lodash": "^4.17.4"
   },
